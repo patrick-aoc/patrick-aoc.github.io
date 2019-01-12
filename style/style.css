@@ -1,0 +1,116 @@
+h1 { 
+    font-family: 'Nova Square', sans-serif; 
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#main-head {
+    -webkit-animation-duration: 0.95s;
+}
+
+/* ============= Animations for the 2nd header =========== */
+h2 {
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+#first-head {
+    -webkit-animation: slide-right 8s infinite ease-in-out;
+    animation: slide-right 8s infinite ease-in-out;
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+
+}
+
+@keyframes slide-right {
+    0% {margin-left: 100%;}
+    10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50% {margin-left: 0%;}
+    55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 100% {margin-left: 100%;}
+}
+
+@-webkit-keyframes slide-right {
+    0% {margin-left: 100%;}
+    10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50% {margin-left: 0%;}
+    55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 100% {margin-left: 100%;}
+}
+
+#second-head {
+    -webkit-animation: slide-left 8s infinite ease-in-out;
+    -webkit-animation-delay: 5s;
+    animation: slide-left 8s infinite ease-in-out;
+    animation-delay: 4s;
+    margin-left: -185%;
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+
+}
+
+@keyframes slide-left {
+    0% {margin-left: -185%;}
+    10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50% {margin-left: 0%;}
+    55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 100% {margin-left: -185%;}
+}
+
+@-webkit-keyframes slide-left {
+    0% {margin-left: -185%;}
+    10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50% {margin-left: 0%;}
+    55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 100% {margin-left: -185%;}
+}
+/* ======================================================== */
+
+body{
+    background-color:black;
+    margin: 0;
+    font-family: 'Nova Square', sans-serif; 
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.main-text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    line-height: 0.4em;
+}
+
+.main-buttons{
+    position: absolute;
+    text-align: center;
+    top: 51%;
+    width: 100%;
+    -webkit-animation-duration: 0.95s;
+}
+/* ============= BUTTONS ============= */
+.btn{
+    color: white;
+    text-decoration: none;
+    border: #ccc 1px solid;
+    padding: 10px 12px;
+    border-radius: 8px;
+    line-height: 0.4em;
+    margin-top: 100%;
+}
+
+.btn:hover{
+    color: transparent;
+    border: #fff 1px solid;
+    opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+    transition: 0.3s;
+}
+
+@keyframes fadeOutOpacity {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+#particles-js{
+    background-image: url();
+    height: 100vh;
+}
