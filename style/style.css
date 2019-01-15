@@ -70,7 +70,7 @@ body{
 
 .main-text{
     color: white;
-    position: absolute;
+    position: fixed;
     text-align: center;
     text-overflow: clip;
     top: 40%;
