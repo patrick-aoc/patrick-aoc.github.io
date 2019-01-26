@@ -99,20 +99,18 @@ img {
     border-radius: 8px;
     line-height: 0.4em;
     margin-top: 100%;
+    transition: 0.1s;
 }
 
 .btn:hover{
-    color: transparent;
+    background-color:dimgray;
     border: #fff 1px solid;
-    opacity: 1;
-	animation-name: fadeOutOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-    transition: 0.3s;
+    transition: 0.1s;
+    padding: 16px 18px;
 }
 
 @keyframes fadeOutOpacity {
-	0% {opacity: 1;}
+	0% {opacity: 0;}
 	100% {opacity: 0;}
 }
 
