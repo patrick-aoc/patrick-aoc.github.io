@@ -103,10 +103,11 @@ img {
 }
 
 .btn:hover{
-    background-color:dimgray;
+    background-color:gray;
     border: #fff 1px solid;
     transition: 0.1s;
     padding: 16px 18px;
+    opacity: 0.9;
 }
 
 @keyframes fadeOutOpacity {
