@@ -14,7 +14,7 @@
 
         gtag('config', 'UA-133296539-1');
     </script>
-    <meta name=”viewport” content=”width=device-width, initial-scale=1, user-scalable=no″>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Patrick Angelo Ocampo - Home</title>
     <!-- CSS/Style stuff -->
@@ -29,20 +29,20 @@
         var partJson = {
             "particles": {
                 "number": {
-                    "value": 95,
+                    "value": 200,
                     "density": {
                         "enable": true,
                         "value_area": 1920
                     }
                 },
                 "color": {
-                    "value": "#fff"
+                    "value": "#696969"
                 },
                 "shape": {
                     "type": "circle",
                     "stroke": {
                         "width": 0,
-                        "color": "#000000"
+                        "color": "#696969"
                     },
                     "polygon": {
                         "nb_sides": 5
@@ -65,13 +65,13 @@
                         "enable": false,
                         "speed": 15,
                         "size_min": 0.5,
-                        "sync": false
+                        "sync": true
                     }
                 },
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#fff",
+                    "color": "#696969",
                     "opacity": 1,
                     "width": 1.2
                 },
@@ -83,7 +83,7 @@
                     "straight": false,
                     "out_mode": "out",
                     "attract": {
-                        "enable": false,
+                        "enable": true,
                         "rotateX": 600,
                         "rotateY": 1200
                     }
@@ -139,6 +139,7 @@
         function ShowContent(content) {
             document.getElementById("main_patrick").style.display='none';
             document.getElementById("about_me_section").style.display='none';
+            document.getElementById("experience_section").style.display='none';
             document.getElementById(content).style.display='block';
         }
     </script>
@@ -146,16 +147,18 @@
 
 <body>
     <div id="particles-js">
-    <nav class="animated fadeInDown">
+    
+    <div id="nav_container" class="animated fadeInDown" style="display:block">
+    <nav>
         <ul>
             <li>
                 <a href="#" onclick="return ShowContent('main_patrick');">Home</a>
             </li>
             <li>
-                <a href="#">About Me</a>
+                <a href="#" onclick="return ShowContent('about_me_section');">About Me</a>
             </li>
             <li>
-                <a href="#">Experience</a>
+                <a href="#" onclick="return ShowContent('experience_section');">Experience</a>
             </li>
             <li>
                 <a href="#">Resume</a>
@@ -165,6 +168,7 @@
             </li>
         </ul>
     </nav>
+    </div>
     </div>
     
     <div id="main_patrick" style="display:block">
@@ -180,11 +184,17 @@
         </div>
     </div>
     
-
-    <div id="about_me_section" class="about" style="display:none">
-        <div class="about_me">
-            <h2 id="about_me_head">About Me</h2>
-            <p id="about_me_text"></p>
+    <div id="about_me_section" style="display:none">
+        <div class="animated bounceInLeft">
+            <h2 id="about_me_head">Hi! :)</h2>
+            <p id="about_me_text">text</p>
+        </div>
+    </div>
+    
+    <div id="experience_section" style="display:none">
+        <div class="animated bounceInRight">
+            <h2 id="experience_head">Work Experience</h2>
+            <p id="experience_text">text</p>
         </div>
     </div>
 
