@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="style/animate.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <!-- particles.js -->
     <script src="js/particles.min.js"></script>
     <!-- A workaround for allowing the particles.js script to run on Chrome -->
@@ -135,23 +135,61 @@
                 console.log('particles.json loaded...')
             });
     </script>
+    <script type="text/javascript">
+        function ShowContent(content) {
+            document.getElementById("main_patrick").style.display='none';
+            document.getElementById("about_me_section").style.display='none';
+            document.getElementById(content).style.display='block';
+        }
+    </script>
 </head>
 
 <body>
     <div id="particles-js">
+    <nav class="animated fadeInDown">
+        <ul>
+            <li>
+                <a href="#" onclick="return ShowContent('main_patrick');">Home</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Experience</a>
+            </li>
+            <li>
+                <a href="#">Resume</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
     </div>
-
-    <div class="main-text">
-        <h1 id="main-head" class="animated bounceInDown">Patrick Angelo Ocampo</h1>
-        <h2 id="first-head">Third Year Computer Science Student</h2>
-        <h2 id="second-head">Software Engineering Stream</h2>
-        <div class="main-buttons animated bounceInUp">
-            <a href="https://www.facebook.com/Patrick.A.Ocampo" target="_blank" class="btn">Facebook</a>
-            <a href="https://ca.linkedin.com/in/patrick-ocampo-153293140" target="_blank" class="btn">LinkedIn</a>
-            <a href="https://github.com/patrick-aoc" target="_blank" class="btn">GitHub</a>
+    
+    <div id="main_patrick" style="display:block">
+        <div class="main-text">
+            <h1 id="main-head" class="animated bounceInDown">Patrick Angelo Ocampo</h1>
+            <h2 id="first-head">Third Year Computer Science Student</h2>
+            <h2 id="second-head">Software Engineering Stream</h2>
+            <div class="main-buttons animated bounceInUp">
+                <a href="https://www.facebook.com/Patrick.A.Ocampo" target="_blank" class="btn">Facebook</a>
+                <a href="https://ca.linkedin.com/in/patrick-ocampo-153293140" target="_blank" class="btn">LinkedIn</a>
+                <a href="https://github.com/patrick-aoc" target="_blank" class="btn">GitHub</a>
+            </div>
         </div>
     </div>
     
+
+    <div id="about_me_section" class="about" style="display:none">
+        <div class="about_me">
+            <h2 id="about_me_head">About Me</h2>
+            <p id="about_me_text"></p>
+        </div>
+    </div>
+
+    
+
 </body>
 
 </html>

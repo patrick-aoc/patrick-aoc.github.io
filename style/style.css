@@ -1,14 +1,51 @@
 h1 { 
-    font-family: 'Nova Square', sans-serif; 
+    font-family: 'Play', sans-serif; 
     font-size: 50px;
-    font-weight: normal;
+    font-weight:bold;
 }
 
 #main-head {
     -webkit-animation-duration: 0.95s;
+    
 }
 
-/* ============= Animations for the 2nd header =========== */
+nav {
+    max-width: 960px;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    z-index: 0;
+    -webkit-animation-duration: 0.7s;
+}
+
+nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+nav ul li {
+    display: inline-block;
+    border-color: black;
+}
+
+nav ul li a {
+    padding: 18px;
+    font-family: "Play";
+    text-transform:uppercase;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.2s;
+    font-weight: bolder;
+}
+
+
+/* ============= Animations for the 2nd set of headers =========== */
 h2 {
     font-weight: normal;
     white-space: nowrap;
@@ -23,6 +60,17 @@ h2 {
 
 }
 
+#second-head {
+    -webkit-animation: slide-left 8s infinite ease-in-out;
+    -webkit-animation-delay: 5s;
+    animation: slide-left 8s infinite ease-in-out;
+    animation-delay: 4s;
+    margin-left: -185%;
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+}
+
 @keyframes slide-right {
     0% {margin-left: 100%;}
     10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50% {margin-left: 0%;}
@@ -33,18 +81,6 @@ h2 {
     0% {margin-left: 100%;}
     10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50% {margin-left: 0%;}
     55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 100% {margin-left: 100%;}
-}
-
-#second-head {
-    -webkit-animation: slide-left 8s infinite ease-in-out;
-    -webkit-animation-delay: 5s;
-    animation: slide-left 8s infinite ease-in-out;
-    animation-delay: 4s;
-    margin-left: -185%;
-    position: absolute;
-    width: 100%;
-    margin-top: auto;
-
 }
 
 @keyframes slide-left {
@@ -63,16 +99,15 @@ h2 {
 body{
     background-color:black;
     margin: 0;
-    font-family: 'Nova Square', sans-serif; 
+    font-family: 'Play', sans-serif; 
     font-size: 16px;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .main-text{
     color: white;
-    position: fixed;
+    position:fixed;
     text-align: center;
-    text-overflow: clip;
     top: 40%;
     width: 100%;
     line-height: 0.4em;
@@ -86,10 +121,6 @@ body{
     -webkit-animation-duration: 0.95s;
 }
 
-img {
-    height: 35px;
-    max-width: 100vw;  
-}
 /* ============= BUTTONS ============= */
 .btn{
     color: white;
@@ -108,6 +139,7 @@ img {
     transition: 0.1s;
     padding: 16px 18px;
     opacity: 0.9;
+    font-weight: bolder;
 }
 
 @keyframes fadeOutOpacity {
@@ -117,5 +149,15 @@ img {
 
 #particles-js{
     background-image: url();
-    height: 100vh;
+    height: 120vh;
+}
+
+/* ================ ABOUT ME SECTION ============== */
+#about{
+    vertical-align: top;
+}
+
+#about_me_head{
+    color: white;
+    font-size: 32px;
 }
