@@ -189,8 +189,9 @@ body{
     display:inline-flex;                   
     flex-wrap: wrap;                     
     justify-content:space-between;
-    flex-wrap: nowrap;
+    flex-flow:row;
     animation-delay: 4.5s;
+    width: 90%;
 }
 
 .cell-d1, .cell-d2, cell-d3 {
