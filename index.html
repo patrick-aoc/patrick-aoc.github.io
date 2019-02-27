@@ -135,14 +135,6 @@
                 console.log('particles.json loaded...')
             });
     </script>
-    <script type="text/javascript">
-        function ShowContent(content) {
-            document.getElementById("main_patrick").style.display='none';
-            document.getElementById("about_me_section").style.display='none';
-            document.getElementById("experience_section").style.display='none';
-            document.getElementById(content).style.display='block';
-        }
-    </script>
 </head>
 
 <body>
@@ -152,22 +144,22 @@
     <nav>
         <ul>
             <li>
-                <a href="#" onclick="return ShowContent('main_patrick');">Home</a>
+                <a href="#" class="item active" onclick="return ShowContent('main_patrick');">Home</a>
             </li>
             <li>
-                <a href="#" onclick="return ShowContent('about_me_section');">About Me</a>
+                <a href="#" class="item" onclick="return ShowContent('about_me_section');">About Me</a>
             </li>
             <li>
-                <a href="#" onclick="return ShowContent('experience_section');">Experience</a>
+                <a href="#" class="item" onclick="return ShowContent('experience_section');">Experience</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a href="#" class="item">Projects</a>
             </li>
             <li>
-                <a href="#">Resume</a>
+                <a href="#" class="item">Resume</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#" class="item">Contact</a>
             </li>
         </ul>
     </nav>
@@ -191,6 +183,7 @@
         <div class="typewriter">
             <h2 id="about_me_head">this.website.getInfoAboutPatrickOcampo();</h2>
             <p id="about_me_text_1" class="animated bounceInLeft">Hi, I'm Patrick! I'm currently a third year coop student studying computer science at University of Toronto - Scarborough Campus. I enjoy taking on new challenges and transforming ideas into solutions towards problems that come my way.</p>
+            <p id="about_me_text_2" class="animated bounceInLeft">Through my school projects and work experience, I've acquired the skills and knowledge necessary for the industry today - agile methodologies (scrum), testing, object oriented programming, etc. I have an eager desire to learn more and pick up new tools to add to my belt!</p>
             <div class="grid-d">
                 <div id="langs" style="display:inline-grid" class="cell-d1 animated bounceInLeft">
                     <h3 id="languages">Programming</h3>
@@ -206,26 +199,51 @@
                         <li>SVN</li>
                 </div>
                 <div id="tools" style="display:inline-grid" class="cell-d3 animated bounceInLeft">
-                    <h3 id="tools_frame">Tools & Frameworks</h3>
+                    <h3 id="tools_frame">Tools &amp Frameworks</h3>
                         <li>TestNG</li>
                         <li>Selenium</li>
                         <li>Ranorex</li>
                         <li>Pytest/Allure</li>
-                        <li>Atlassian Products - JIRA, Confluence, Bamboo</li>
+                </div>
+                <div id="other" style="display:inline-grid" class="cell-d4 animated bounceInLeft">
+                    <h3 id="other_frame">Other</h3>
+                        <li>JIRA</li>
+                        <li>Confluence</li>
+                        <li>Bamboo</li>
                         <li>HP ALM</li>
+                        <li>Shell Scripting</li>
                 </div>
             </div>
         </div>
     </div>
     
     <div id="experience_section" style="display:none">
-        <div class="animated bounceInRight">
-            <h2 id="experience_head">this.Website.get_experience_of_Patrick_Ocampo();</h2>
+        <div class="typewriter">
+            <h2 id="experience_head">this.website.getExperienceOfPatrickOcampo();</h2>
             <p id="experience_text">text</p>
         </div>
     </div>
 
-
+    <script type="text/javascript">
+        function ShowContent(content) {
+            document.getElementById("main_patrick").style.display='none';
+            document.getElementById("about_me_section").style.display='none';
+            document.getElementById("experience_section").style.display='none';
+            document.getElementById(content).style.display='block';
+        }
+    </script>
+    <script type="text/javascript">
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("nav_container");
+        var btns = header.getElementsByClassName("item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
