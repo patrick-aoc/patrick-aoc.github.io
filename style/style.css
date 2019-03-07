@@ -15,7 +15,7 @@ nav {
     z-index: 0;
     -webkit-animation-duration: 0.7s;
     display:block;
-    position: absolute;
+    position: relative;
     top:0;
     width: 100%;
 }
@@ -104,8 +104,7 @@ body{
     margin: 0;
     font-family: 'Exo', sans-serif; 
     font-size: 16px;
-    overflow-y:auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .main-text{
@@ -141,14 +140,15 @@ body{
 /* ================ ABOUT ME SECTION ============== */
 #about_me_section{
     color: white;
-    position:absolute;
+    position:relative;
     text-align:center;
-    top: 6vw;
+    top: 2vw;
     width: 95%;
     background-color: rgba(105,105,105,0.5);
-    margin: 30px;
-    overflow-y: auto;
+    margin:auto;
     overflow-x: hidden;
+    border: 10px solid rgba(255,255,255,0.4);
+    border-radius: 10%;
 }
 
 #about_me_head{
@@ -180,6 +180,7 @@ body{
 .cell-c2 {
     animation-delay: 0.8s;
     align-self:center;
+    border-radius: 10%;
 }
 
 .grid-d {
