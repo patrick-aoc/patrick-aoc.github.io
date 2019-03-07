@@ -1,5 +1,5 @@
 h1 { 
-    font-family: 'Play', sans-serif; 
+    font-family: 'Exo', sans-serif; 
     font-size: 50px;
     font-weight:bold;
 }
@@ -15,7 +15,8 @@ nav {
     z-index: 0;
     -webkit-animation-duration: 0.7s;
     display:block;
-    position: fixed;
+    position: absolute;
+    top:0;
     width: 100%;
 }
 
@@ -30,11 +31,11 @@ nav ul li {
 }
 
 nav ul li a, .item {
-    padding: 18px;
-    font-family: "Play";
+    padding: 12px;
+    font-family: "Exo";
     text-transform:uppercase;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     display: block;
 }
@@ -43,7 +44,7 @@ nav ul li a:hover, .active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.1);
     transition: 0.2s;
-    font-weight: bolder;
+    color: lightgray;
 }
 
 
@@ -101,9 +102,10 @@ h2 {
 body{
     background-color:black;
     margin: 0;
-    font-family: 'Play', sans-serif; 
+    font-family: 'Exo', sans-serif; 
     font-size: 16px;
-    overflow:hidden;
+    overflow-y:auto;
+    overflow-x: hidden;
 }
 
 .main-text{
@@ -119,36 +121,9 @@ body{
 .main-buttons{
     position: absolute;
     text-align: center;
-    top: 160%;
+    top: 140%;
     width: 100%;
-    line-height: 0.4em;
     -webkit-animation-duration: 0.95s;
-}
-
-/* ============= BUTTONS ============= */
-.btn{
-    color: white;
-    text-decoration: none;
-    border: #ccc 1px solid;
-    padding: 10px 12px;
-    border-radius: 8px;
-    line-height: 0.4em;
-    margin-top: 100%;
-    transition: 0.1s;
-}
-
-.btn:hover{
-    background-color:gray;
-    border: #fff 1px solid;
-    transition: 0.1s;
-    padding: 16px 18px;
-    opacity: 0.9;
-    font-weight: bolder;
-}
-
-@keyframes fadeOutOpacity {
-	0% {opacity: 0;}
-	100% {opacity: 0;}
 }
 
 #particles-js{
@@ -167,39 +142,44 @@ body{
 #about_me_section{
     color: white;
     position:absolute;
-    text-align:left;
-    top: 10vw;
-    width: 100%;
-    border: 1px;
-    margin-left: 100px;
+    text-align:center;
+    top: 6vw;
+    width: 95%;
+    background-color: rgba(105,105,105,0.5);
+    margin: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #about_me_head{
     font-weight: 1000;
     color: white;
-    font-size: 44px;
+    font-size: 40px;
     width: 100%;
-    text-align: left;
+    line-height: 0.5em;
+    text-align: center;
 }
 
-#about_me_text_1{
+#about_me_text{
     color: white;
     font-size: 20px;
-    line-height: 1.75em;
+    line-height: 1.25em;
     text-overflow: ellipsis;
     animation-delay: 0.8s;
-    width: 45%;
-    text-align: justify;
+    width: 100%;
+    text-align: center;
+    animation-delay: 0.8s;
 }
 
-#about_me_text_2{
-    color: white;
-    font-size: 20px;
-    line-height: 1.75em;
-    text-overflow: ellipsis;
+.grid-c {
+    display:inline-block;                                      
+    width: 95%; 
+    padding-left: 30px;
+}
+
+.cell-c2 {
     animation-delay: 0.8s;
-    width: 45%;
-    text-align: justify;
+    align-self:center;
 }
 
 .grid-d {
@@ -207,12 +187,14 @@ body{
     flex-wrap: wrap;                     
     justify-content:space-between;
     flex-flow:row;
-    width: 90%;
+    width: 100%;
+    text-align: left;
 }
 
 .cell-d1, .cell-d2, .cell-d3, .cell-d4 {
-    flex: 1 0 21%;                       
-    margin-bottom: 5px;
+    flex: 1 0 21%;   
+    padding-left: 50px;
+    padding-bottom: 15px;
     font-size: 18px;
     animation-delay: 0.8s;
 }
@@ -236,7 +218,7 @@ body{
 #experience_head{
     font-weight: 1000;
     color: white;
-    font-size: 44px;
+    font-size: 40px;
     width: 100%;
     text-align: left;
 }

@@ -21,8 +21,9 @@
     <!-- CSS/Style stuff -->
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
     <!-- particles.js -->
     <script src="js/particles.min.js"></script>
     <!-- A workaround for allowing the particles.js script to run on Chrome -->
@@ -157,9 +158,6 @@
                 <a href="#" class="item">Projects</a>
             </li>
             <li>
-                <a href="#" class="item">Resume</a>
-            </li>
-            <li>
                 <a href="#" class="item">Contact</a>
             </li>
         </ul>
@@ -173,17 +171,28 @@
             <h2 id="first-head">Third Year Computer Science Student</h2>
             <h2 id="second-head">Software Engineering Stream</h2>
             <div class="main-buttons animated bounceInUp">
-                <a href="https://www.facebook.com/Patrick.A.Ocampo" target="_blank" class="btn">Facebook</a>
-                <a href="https://ca.linkedin.com/in/patrick-ocampo-153293140" target="_blank" class="btn">LinkedIn</a>
-                <a href="https://github.com/patrick-aoc" target="_blank" class="btn">GitHub</a>
+                <a id="facebook" href="https://www.facebook.com/Patrick.A.Ocampo" target="_blank">
+                    <i class="fa fa-facebook-square" style="font-size:30px;color:white;"></i>
+                </a>
+                <a id="linked-in" href="https://ca.linkedin.com/in/patrick-ocampo-153293140" target="_blank">
+                    <i class="fa fa-linkedin-square" style="font-size:30px;color:white;padding-left:15px"></i>
+                </a>
+                <a id="github" href="https://github.com/patrick-aoc" target="_blank">
+                    <i class="fa fa-github-square" style="font-size:30px;color:white;padding-left:15px"></i>
+                </a>            
+                <a id="resume" href="images/resume_patrick-ao.pdf" target="_blank">
+                    <i class="fa fa-file-text" style="font-size:25px;color:white;padding-left:15px"></i>
+                </a>
             </div>
         </div>
     </div>
     
-    <div id="about_me_section" style="display:none">
+    <div id="about_me_section" class="animated bounceInRight" style="display:none">
         <h2 id="about_me_head" class="animated bounceInRight">Who am I?</h2>
-        <p id="about_me_text_1" class="animated bounceInLeft"> I'm currently a third year coop student studying computer science at the University of Toronto - Scarborough Campus. I enjoy taking on new challenges and transforming ideas into solutions towards problems that come my way.</p>
-        <p id="about_me_text_2" class="animated bounceInLeft">Through my school projects and work experience, I've acquired the skills and knowledge necessary for the industry today - agile methodologies (scrum), testing, object oriented programming, etc. I have an eager desire to learn more and pick up new tools to add to my belt!</p>
+        <div class="grid-c">
+            <img src="images/selfie5.png" class="cell-c2 animated bounceInLeft">
+            <p id="about_me_text" class="cell-c1 animated bounceInRight"> I'm currently a third year coop student studying computer science at the University of Toronto - Scarborough Campus. I enjoy taking on new challenges and transforming ideas into solutions towards problems that come my way. <br><br> Through my school projects and work experience, I've acquired the skills and knowledge necessary for the industry today - agile methodologies (scrum), testing, object oriented programming, continuous integration, etc. The list doesn't end there since I'm always looking to learn more and add more tools to my [developer] belt!</p>
+        </div>
         <div class="grid-d">
             <div id="langs" style="display:inline-grid" class="cell-d1 animated bounceInLeft">
                 <h3 id="languages">Programming</h3>
@@ -218,7 +227,8 @@
     
     <div id="experience_section" style="display:none">
         <h2 id="experience_head" class="animated bounceInLeft">What have I done?</h2>
-        <p id="experience_text">text</p>
+        <h3 id="work-head">Work Experience</h2>
+        <h3 id="volunteer-head">Volunteer Experience</h2>
     </div>
 
     <script type="text/javascript">
