@@ -187,28 +187,6 @@ i {
     border-radius: 10%;
 }
 
-.grid-d {
-    display:inline-flex;                   
-    flex-wrap: wrap;                     
-    justify-content:space-between;
-    flex-flow:row;
-    width: 100%;
-    text-align: left;
-}
-
-.cell-d1, .cell-d2, .cell-d3, .cell-d4 {
-    flex: 1 0 21%;   
-    padding-left: 50px;
-    padding-bottom: 15px;
-    font-size: 18px;
-    animation-delay: 0.8s;
-}
-
-#langs #vcs #tools #other {
-    float: left;
-    text-overflow: ellipsis;
-}
-
 /* ================ EXPERIENCE SECTION ============== */
 #experience_section{
     color: white;
@@ -233,3 +211,24 @@ i {
     font-size: 20px;
 }
 
+.grid-d {
+    display:inline-flex;                   
+    flex-wrap: wrap;                     
+    justify-content:space-between;
+    flex-flow:row;
+    width: 100%;
+    text-align: left;
+}
+
+.cell-d1, .cell-d2, .cell-d3, .cell-d4 {
+    flex: 1 0 21%;   
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    animation-delay: 0.8s;
+}
+
+#langs #vcs #tools #other {
+    float: left;
+    text-overflow: ellipsis;
+}
