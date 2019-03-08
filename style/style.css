@@ -214,10 +214,24 @@ a {
     text-align: center;
 }
 
-#experience_text{
-    color: white;
-    font-size: 20px;
+#work-container, #volunteer-container{
+    animation-delay: 0.8s;
 }
+
+#work-head, #volunteer-head{
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+    animation-delay: 0.8s;
+}
+
+.heads {
+    font-size: 20px;
+    text-align: left;
+    margin-left:64px;
+}
+
 
 .grid-d {
     display:inline-flex;                   
