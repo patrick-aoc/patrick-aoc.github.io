@@ -105,6 +105,7 @@ body{
     font-family: 'Exo', sans-serif; 
     font-size: 16px;
     overflow-y: auto;
+    font-size-adjust: none;
 }
 
 .main-text{
@@ -220,7 +221,7 @@ a {
 
 #work-head, #volunteer-head{
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     text-align: left;
     margin-left: 20px;
     animation-delay: 0.8s;
