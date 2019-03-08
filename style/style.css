@@ -104,7 +104,7 @@ body{
     margin: 0;
     font-family: 'Exo', sans-serif; 
     font-size: 16px;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .main-text{
@@ -123,6 +123,10 @@ body{
     top: 140%;
     width: 100%;
     -webkit-animation-duration: 0.95s;
+}
+
+i {
+    vertical-align: middle;
 }
 
 #particles-js{
