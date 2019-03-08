@@ -190,12 +190,15 @@ i {
 /* ================ EXPERIENCE SECTION ============== */
 #experience_section{
     color: white;
-    position:absolute;
-    text-align:left;
-    top: 10vw;
-    width: 100%;
-    border: 1px;
-    margin-left: 100px;
+    position:relative;
+    text-align:center;
+    top: 2vw;
+    width: 95%;
+    background-color: rgba(105,105,105,0.5);
+    margin:auto;
+    overflow-x: hidden;
+    border: 10px solid rgba(255,255,255,0.4);
+    border-radius: 10%;
 }
 
 #experience_head{
@@ -203,7 +206,8 @@ i {
     color: white;
     font-size: 40px;
     width: 100%;
-    text-align: left;
+    line-height: 0.5em;
+    text-align: center;
 }
 
 #experience_text{
