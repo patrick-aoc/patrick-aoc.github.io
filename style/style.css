@@ -233,6 +233,12 @@ a {
     margin-left:64px;
 }
 
+#skills-head {
+    font-size: 22px;
+    text-align: center;
+    margin-left: 20px;
+    animation-delay: 0.8s;
+}
 
 .grid-d {
     display:inline-flex;                   
