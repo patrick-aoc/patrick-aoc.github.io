@@ -157,7 +157,6 @@ a {
     margin:auto;
     overflow-x: hidden;
     border: 10px solid rgba(255,255,255,0.4);
-    border-radius: 10%;
 }
 
 #about_me_head{
@@ -189,7 +188,7 @@ a {
 .cell-c2 {
     animation-delay: 0.8s;
     align-self:center;
-    border-radius: 10%;
+/*    border-radius: 10%;*/
 }
 
 /* ================ EXPERIENCE SECTION ============== */
@@ -203,7 +202,6 @@ a {
     margin:auto;
     overflow-x: hidden;
     border: 10px solid rgba(255,255,255,0.4);
-    border-radius: 10%;
 }
 
 #experience_head{
@@ -231,6 +229,12 @@ a {
     font-size: 20px;
     text-align: left;
     margin-left:64px;
+}
+
+.bullet-group {
+    text-align: left;
+    margin-left:64px;
+    display:block;
 }
 
 #skills-head {
