@@ -192,7 +192,7 @@ a {
 }
 
 /* ================ EXPERIENCE SECTION ============== */
-#experience_section{
+#experience_section {
     color: white;
     position:relative;
     text-align:center;
@@ -222,7 +222,6 @@ a {
     font-size: 28px;
     text-align: left;
     margin-left: 20px;
-    animation-delay: 0.8s;
 }
 
 .heads {
@@ -235,33 +234,88 @@ a {
     text-align: left;
     margin-left:64px;
     display:block;
+    font-size:18px;
 }
 
 #skills-head {
     font-size: 22px;
     text-align: center;
     margin-left: 20px;
-    animation-delay: 0.8s;
 }
 
 .grid-d {
     display:inline-flex;                   
     flex-wrap: wrap;                     
-    justify-content:space-between;
+    justify-content:space-around;
     flex-flow:row;
     width: 100%;
+    text-align: center;
+}
+
+#languages, #tools_frame, #other_frame {
+    text-align: center;
+}
+
+.unorder {
+    display:table; 
+    margin:0 auto;    
     text-align: left;
 }
 
-.cell-d1, .cell-d2, .cell-d3, .cell-d4 {
+.cell-d1, .cell-d3, .cell-d4 {
     flex: 1 0 21%;   
-    padding-left: 50px;
     padding-bottom: 15px;
     font-size: 18px;
-    animation-delay: 0.8s;
 }
 
 #langs #vcs #tools #other {
     float: left;
     text-overflow: ellipsis;
+}
+
+/*=============== PROJECT SECTION ====================*/
+#project_section {
+    color: white;
+    position:relative;
+    text-align:center;
+    top: 2vw;
+    width: 95%;
+    background-color: rgba(105,105,105,0.5);
+    margin:auto;
+    overflow-x: hidden;
+    border: 10px solid rgba(255,255,255,0.4);
+}
+
+#project-head {
+    font-weight: 1000;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    line-height: 0.5em;
+    text-align: center;
+}
+
+#proj1-head, #proj2-head, #proj3-head {
+    color: white;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#proj1-container, #proj2-container, #proj3-container {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 98%;
+}
+
+.details {
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+#link1 {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 60px;
 }

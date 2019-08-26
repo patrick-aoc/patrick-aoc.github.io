@@ -155,10 +155,7 @@
                 <a href="#" class="item" onclick="return ShowContent('experience_section');">Experience</a>
             </li>
             <li>
-                <a href="#" class="item">Projects</a>
-            </li>
-            <li>
-                <a href="#" class="item">Contact</a>
+                <a href="#" class="item" onclick="return ShowContent('project_section')">Projects</a>
             </li>
         </ul>
     </nav>
@@ -215,6 +212,7 @@
                 <li>Followed agile practices and scrum methodologies throughout the duration of the work term</li>
                 <li>Participated in the planning of social events for the QA Department as a member of the social committee</li>
             </ul>
+                <hr style="border:1px solid white;" width="95%"/>
         </div>
         <br>
         <h3 id="volunteer-head">Volunteer Experience</h3>
@@ -225,46 +223,82 @@
                 <li> Mentored new lectors on how to follow specific procedures as a lector during mass</li>
             </ul>
         </div>
-        <h3 id="skills-head">In addition, here's what I know...</h3>
+        <br>
+        <h3 id="skills-head">And this is what I know as a developer...</h3>
             <div class="grid-d">
                 <div id="langs" style="display:inline-grid" class="cell-d1">
                     <h3 id="languages">Programming</h3>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>C#</li>
-                        <li>JavaScript</li>
-                        <li>Haskell</li>
+                        <ul class="unorder">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>Haskell</li>
+                        </ul>
                 </div>
                 <div id="tools" style="display:inline-grid" class="cell-d3">
-                    <h3 id="tools_frame">Tools &amp Frameworks</h3>
-                        <li>React</li>
-                        <li>TestNG</li>
-                        <li>Selenium</li>
-                        <li>Ranorex</li>
-                        <li>Pytest/Allure</li>
-                </div>
-                <div id="vcs" style="display:inline-grid" class="cell-d2">
-                    <h3 id="vcontrol">Version Control</h3>
-                        <li>Git</li>
-                        <li>SVN</li>
+                    <h3 id="tools_frame">Tools, Frameworks, &amp APIs</h3>
+                        <ul class="unorder">
+                            <li>React.js</li>
+                            <li>Firebase</li>
+                            <li>TestNG</li>
+                            <li>Selenium</li>
+                            <li>Ranorex</li>
+                            <li>Pytest/Allure</li>
+                        </ul>
                 </div>
                 <div id="other" style="display:inline-grid" class="cell-d4">
-                    <h3 id="other_frame">Other</h3>
-                        <li>JIRA</li>
-                        <li>Confluence</li>
-                        <li>Bamboo</li>
-                        <li>HP ALM</li>
-                        <li>Shell Scripting</li>
+                    <h3 id="other_frame">Miscellaneous</h3>
+                        <ul class="unorder">
+                            <li>JIRA</li>
+                            <li>Confluence</li>
+                            <li>Bamboo</li>
+                            <li>HP ALM</li>
+                            <li>Shell Scripting</li>
+                            <li>Git</li>
+                            <li>SVN</li>
+                        </ul>
                 </div>
             </div>
     </div>
 
+    <div id="project_section" style="display:none">
+        <h2 id="project-head">What have I worked on?</h2> 
+        <h3 id="proj1-head">Ask Finleigh!</h3>
+            <div id="proj1-container">
+                <h4 class="heads">Academic Project | Introduction to Software Engineering <br> May 2019 - July 2019</h4>
+                <p class="details">
+                    Ask Finleigh is a chatbot capable of answering questions and queries related to the fintech - financial technology - industry. Individuals have the option between querying through two different ways - through a search engine or through IBM Watson. The front-end was made with React.js using the Material UI library to give it a minimalistic look, Firebase for user authentication/management, and Apex Charts for providing simple visualizations of user querying statistics. The back-end was written in Java using Javalin for managing our webserver/handling events, H2/Requery for database related operations, Apache Lucene for being the indexer component of our search engine, and the IBM Watson Discovery/Assistant APIs. This project received an overall grade of 90%.
+                </p>
+                <a id="link1" href="https://www.youtube.com/watch?v=MJ6ywMtYeEA&t" target="_blank"><b>Click here for a quick video demo of the project</b></a>
+            </div>
+        <br>
+        <hr style="border:1px solid white;" width="98%"/>
+        <h3 id="proj2-head">MyBnB</h3>
+            <div id="proj2-container">
+                <h4 class="heads">Academic Project | Introduction to Databases <br> June 2019 - July 2019</h4>
+                <p class="details">
+                    MyBnB is a small-scale replica of AirBnB's database systems. It supports basic operations of allowing users to rent and host housing listings with specific amenities/details. It also allows for individuals to query for available listings given a select amount of user defined filters. This project was made with Java and MySQL as a console-based application. It received an overall grade of 105%.
+                </p>
+            </div>
+        <br>
+        <hr style="border:1px solid white;" width="98%"/>
+        <h3 id="proj3-head">Food for Thought</h3>
+            <div id="proj3-container">
+                <h4 class="heads"> Hackathon | MLH - Hack the Valley III @ UTSC <br> February 2019</h4>
+                <p class="details">
+                    Food for Thought is a web application that parses images of food (generally raw/basic ingredients) provided by the user and returns a list of recipes that they can make based on that input. Its back-end was written in Python and Flask (for server hosting). For recognizing the images of food and querying recipes, we used the Google Cloud Vision API and Recipe Puppy respectively. The front end was made with the React framework.
+                </p>
+            </div>
+    </div>
+    
     <script type="text/javascript">
         function ShowContent(content) {
             document.getElementById("main_patrick").style.display='none';
             document.getElementById("about_me_section").style.display='none';
             document.getElementById("experience_section").style.display='none';
+            document.getElementById("project_section").style.display='none';
             document.getElementById(content).style.display='block';
         }
     </script>
