@@ -188,7 +188,7 @@ a {
 .cell-c2 {
     animation-delay: 0.8s;
     align-self:center;
-    width:540px; 
+    width:60%; 
     height: auto;
 /*    border-radius: 10%;*/
 }
